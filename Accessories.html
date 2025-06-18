@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moka Store</title>
+    <link rel="stylesheet" href="women.css">
+    <link rel="icon" type="Images/x-icon" href="Images/moka.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!--navbar--> 
+<header>
+    <a href="E-commerce.html" class="logo">
+      <img src="Images/Moka2.png" alt="Moka Store Logo">
+    </a>
+    <ul class="navbar">
+        <li><a href="E-commerce.html">Home</a></li>
+        <li><a href="man.html">Men</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="shose.html">Shoes</a></li>
+        <li><a href="Accessories.html">Accessories</a></li>
+    </ul>
+</header>
+
+<section class="new" id="new">
+  <div class="heading">
+      <h1>News Arrival  <br>For <span>Accessories</span></h1>
+  </div>
+</section>
+
+<section class="products" id="products">
+    <div class="heading">
+        <h1>Our <span>Products</span></h1>
+    </div>
+    <div class="product-container">
+        <!-- Product 1 (Classic Watch) -->
+        <div class="product">
+            <img src="Images/acc1.jpg" alt="Classic Watch">
+            <h3>Classic Watch</h3>
+            <p>Black</p>
+            <p>$80.00</p>
+            <button class="btn buy-now" data-name="Classic Watch" data-price="$80.00" data-img="Images/acc1.jpg">Buy Now</button>
+        </div>
+
+        <!-- Product 2 (Classic Watch - Green) -->
+        <div class="product">
+            <img src="Images/acc2.jpg" alt="Classic Watch - Green">
+            <h3>Classic Watch</h3>
+            <p>Green</p>
+            <p>$50.00</p>
+            <button class="btn buy-now" data-name="Classic Watch - Green" data-price="$50.00" data-img="Images/acc2.jpg">Buy Now</button>
+        </div>
+
+        <!-- Product 3 (Classic Watch - Blue) -->
+        <div class="product">
+            <img src="Images/acc3.jpg" alt="Classic Watch - Blue">
+            <h3>Classic Watch</h3>
+            <p>Blue</p>
+            <p>$25.00</p>
+            <button class="btn buy-now" data-name="Classic Watch - Blue" data-price="$25.00" data-img="Images/acc3.jpg">Buy Now</button>
+        </div>
+
+        <!-- Product 4 (Winter Hat) -->
+        <div class="product">
+            <img src="Images/acc4.jpg" alt="Winter Hat">
+            <h3>Winter Hat</h3>
+            <p>$120.00</p>
+            <button class="btn buy-now" data-name="Winter Hat" data-price="$120.00" data-img="Images/acc4.jpg">Buy Now</button>
+        </div>
+
+        <!-- Product 5 (SAUVAGE) -->
+        <div class="product">
+            <img src="Images/acc5.jpg" alt="SAUVAGE">
+            <h3>SAUVAGE</h3>
+            <p>$120.00</p>
+            <button class="btn buy-now" data-name="SAUVAGE" data-price="$120.00" data-img="Images/acc5.jpg">Buy Now</button>
+        </div>
+
+        <!-- Product 6 (Mersace) -->
+        <div class="product">
+            <img src="Images/acc6.jpg" alt="Mersace">
+            <h3>Mersace</h3>
+            <p>$120.00</p>
+            <button class="btn buy-now" data-name="Mersace" data-price="$120.00" data-img="Images/acc6.jpg">Buy Now</button>
+        </div>
+
+        <!-- Product 7 (Classic Perfume) -->
+        <div class="product">
+            <img src="Images/acc7.jpg" alt="Classic Perfume">
+            <h3>Classic Perfume</h3>
+            <p>$120.00</p>
+            <button class="btn buy-now" data-name="Classic Perfume" data-price="$120.00" data-img="Images/acc7.jpg">Buy Now</button>
+        </div>
+
+        <!-- Product 8 (Cap) -->
+        <div class="product">
+            <img src="Images/acc8.jpg" alt="Cap">
+            <h3>Cap</h3>
+            <p>$120.00</p>
+            <button class="btn buy-now" data-name="Cap" data-price="$120.00" data-img="Images/acc8.jpg">Buy Now</button>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal" id="product-modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <img id="modal-image" src="" alt="Product Image" style="max-width: 100%; height: auto;">
+    <h2 id="modal-title">Product Name</h2>
+    <p id="modal-price">$0.00</p>
+    <p id="modal-description">This is a description of the product. It looks great and feels amazing!</p>
+    <div class="rating">⭐⭐⭐⭐☆ (4.0)</div>
+  </div>
+</div>
+
+<script src="Accessoris.js"></script>
+
+</body>
+</html>
